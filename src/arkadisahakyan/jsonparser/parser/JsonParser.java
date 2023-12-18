@@ -169,7 +169,7 @@ public class JsonParser {
         boolean openQuote = false;
         for (int i = 0; i < tokens.length; i++) {
             Token current = tokens[i].getToken();
-            if (current.equals(Token.BACKSLASH) && tokens[i + 1].getToken().equals(Token.QUOTE)) {
+            if (current.equals(Token.BACKSLASH) && (tokens[i + 1].getToken().equals(Token.QUOTE) || tokens[i + 1].getToken().equals(Token.BACKSLASH))) {
                 result.add(tokens[i]);
                 i++;
                 result.add(tokens[i]);
