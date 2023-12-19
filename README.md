@@ -21,3 +21,11 @@ if (json instanceof JsonObject) {
   JsonObject obj = (JsonObject) json;
 }
 ```
+
+## Compile & Run
+First, create a folder called *out* in the project root, then run the following two commands in CMD:
+```
+javac -d out -sourcepath src src\arkadisahakyan\jsonparser\Main.java
+java -cp out arkadisahakyan.jsonparser.Main
+```
+Try changing the sample.json file and rebuilding the project.
