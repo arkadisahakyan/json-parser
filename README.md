@@ -8,7 +8,7 @@ This program does not fully support the JSON specification.
 - JSON objects {} can only contain key-value pairs
 - If arrays [] or JSON objects {} contain multiple elements, they must be separated by commas; the last element should not be separated by a comma
 - Any white spaces and newlines are ignored unless they are within quotes
-- To use quotes in strings you can use \", newline is \n, backslash is \\
+- To use quotes in strings you can use \\", newline is \\n, backslash is \\\\
 
 ## Usage
 ```java
